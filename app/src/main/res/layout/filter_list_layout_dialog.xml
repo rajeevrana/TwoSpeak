@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/edittextbackground"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <ImageView
+         android:id="@+id/iamge"
+         android:layout_height="80dp"
+         android:layout_width="80dp"
+         android:layout_marginTop="40dp"
+         android:layout_centerInParent="true"
+         android:background="@mipmap/firstimage"/>
+
+
+
+        <TextView
+            android:id="@+id/nametext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18px"
+            android:layout_marginTop="60dp"
+            android:text="French"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iamge"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Anne"
+            android:textColor="@color/colorPrimary"
+            />
+
+
+        <TextView
+            android:id="@+id/secondname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:paddingBottom="10dp"
+            android:text="Bordedux, France"
+            android:textColor="@color/colorPrimary"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/list_item"
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+       </ListView>
+
+
+    <Button
+        android:id="@+id/startcredit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/corner"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="Start (10 Credits)"
+        android:textColor="#fff" />
+
+</LinearLayout>

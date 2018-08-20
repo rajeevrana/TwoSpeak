@@ -1,0 +1,69 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dip">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/firstimage" />
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:textColor="@color/gray_val"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/icon"
+        android:gravity="center_vertical"
+        android:text="FRENCH"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstLine"
+
+        android:layout_toRightOf="@id/icon"
+        android:textColor="@color/gray_val"
+        android:text="Anne"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/thirdline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondLine"
+
+        android:layout_toRightOf="@id/icon"
+        android:textColor="@color/gray_val"
+        android:text="Podovo, Italy"
+        android:textSize="16sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:layout_marginTop="25dp"
+        android:text="Start"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/corner"
+        android:textColor="#fff"
+        />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
