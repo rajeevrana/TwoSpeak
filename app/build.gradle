@@ -16,9 +16,24 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+    }
 }
 
 dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
     implementation 'com.android.support:recyclerview-v7:26.0.1'
     implementation 'com.ms-square:expandableTextView:0.1.4'
     implementation 'com.squareup.picasso:picasso:2.5.2'
@@ -26,4 +41,20 @@ dependencies {
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation 'com.android.support:appcompat-v7:26.0.1'
+
+    implementation 'org.apache.httpcomponents:httpmime:4.2.3'
+    implementation 'org.apache.httpcomponents:httpcore:4.4.1'
+    implementation 'org.apache.httpcomponents:httpclient:4.5'
+    implementation 'org.jsoup:jsoup:1.10.3'
+    implementation 'com.kaopiz:kprogresshud:1.2.0'
+    implementation 'com.android.volley:volley:1.0.0'
+    implementation 'com.loopj.android:android-async-http:1.4.6'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    // this line must be included to integrate with Firebase
+    implementation 'com.squareup.okhttp3:okhttp:3.4.1'
+    implementation 'com.android.support:multidex:1.0.1'
+    testCompile 'junit:junit:4.12'
+    implementation 'com.android.support.test.espresso:espresso-core:2.2.2'
+
+
 }
